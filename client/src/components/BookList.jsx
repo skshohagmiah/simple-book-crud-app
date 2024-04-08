@@ -1,4 +1,3 @@
-// components/BookList.js
 
 // eslint-disable-next-line react/prop-types
 const BookList = ({ books, onDelete, onEdit }) => {

@@ -1,8 +1,6 @@
-// controllers/bookController.js
 
 const Book = require('../models/book');
 
-// Controller methods for CRUD operations
   // Get all books
  const getAllBooks = async (req, res) => {
     try {

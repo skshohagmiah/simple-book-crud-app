@@ -1,11 +1,9 @@
-// server/server.js
 
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bookRoutes = require('./routes/bookRoutes');
 
-// Create Express app
 const app = express();
 
 // Middleware
@@ -18,9 +16,8 @@ mongoose.connect(`mongodb+srv://shohagmiah2100:shohag@cluster0.3if1pvx.mongodb.n
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-// Routes
+
 app.use('/books', bookRoutes);
 
-// Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
